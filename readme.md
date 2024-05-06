@@ -155,3 +155,8 @@ Fichier .gitignore :
 .code.js
 ./css
 ```
+
+### Exercice
+- Dans un de vos repository, ajoutez un nouveau fichier (.js, .html, .autre, on s'en fiche)
+- Une fois le fichier ajouté, publier la modification sur github (votre repo doit avoir le fichier)
+- Débrouillez-vous ensuite pour supprimer le fichier que vous venez d'ajouter et répercuter la suppression sur votre repo github
