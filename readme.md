@@ -235,3 +235,29 @@ Esuite, faites un commit de vos modifications :
 - Ajoutez un fichier VotrePrenom.md ou .txt
 - Envoyez le fichier sur votre repo
 - Faite une pull request
+
+# Créer une nouvelle branche et travailler dessus
+Pour créer une nouvelle branche et ajouter du nouveau contenu dessus, il faut, dans l'ordre : 
+1. Faire un `git branch -m nomDeLaNouvelleBranche`
+2. Ajouter les fichiers `git add *`
+3. Ajouter un message de commit avec `git commit -m "Message de commit en anglais de préférence"`
+4. Envoyer sur github avec `git push -u origin nomDeLaNouvelleBranche`
+
+## Vérifier la branche
+Vous pouvez vérifier à tout moment la branche sur laquelle vous vous trouvez avec la commande `git checkout`
+Cette commande va vous afficher le nom de la branche sur laquelle vous vous trouvez.
+
+## Changer de branche à la volée
+Il se peut que vous travaillez sur plusieurs features en même temps, que vous fassiez plusieurs essaies, et que vous ayez besoin de travailler sur plusieurs branches d'un même projet. 
+Pour cela, vous allez devoir changer à la volée la branche sur laquelle vous travaillez.
+Utilisez la commande `git checkout nomDeLaNouvelleBranche`
+
+/!\ En faisant cela, vous allez passer de la branche en cours à la nouvelle branche. Faites bien attention a avoir enregistré et envoyé sur github les modifications de la branche en cours.
+
+## En résumé :
+* `git checkout` : Pour vérifier la branche sur laquelle on se trouve
+* `git checkout nomDeLaBranche` : Pour changer de branche
+* `git branch -m nomDeLaBranche` : Pour créer une nouvelle branche et se positionner automatiquement dessus
+* `git add *` : APRES le choix de la branche pour ajouter les fichiers a cette branche
+* `git commit -m "message de commit"` : Pour ajouter un message de commit
+* `git push -u origin nomDeLaBranche` : Pour ajouter le contenu à la branche
